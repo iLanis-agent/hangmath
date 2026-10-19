@@ -1,0 +1,1568 @@
+[
+ {
+  "fn": "hangTruth",
+  "args": [
+   "18",
+   "57",
+   "3"
+  ],
+  "expected": "A picture 18 tall with its center 57 from the floor and the wire 3 below the top edge when pulled taut: put the nail 63 from the floor. The top edge sits at 66 and the bottom edge at 48."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "18",
+   "57",
+   "0"
+  ],
+  "expected": "A picture 18 tall with its center 57 from the floor and the wire 0 below the top edge when pulled taut: put the nail 66 from the floor. The top edge sits at 66 and the bottom edge at 48."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "18",
+   "57",
+   "18"
+  ],
+  "expected": "A picture 18 tall with its center 57 from the floor and the wire 18 below the top edge when pulled taut: put the nail 48 from the floor. The top edge sits at 66 and the bottom edge at 48."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "18",
+   "9",
+   "3"
+  ],
+  "expected": "A picture 18 tall with its center 9 from the floor and the wire 3 below the top edge when pulled taut: put the nail 15 from the floor. The top edge sits at 18 and the bottom edge at 0."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "18",
+   "8.99",
+   "3"
+  ],
+  "expected": "ERR:the bottom of the picture would be below the floor"
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "18",
+   "57",
+   "18.01"
+  ],
+  "expected": "ERR:the wire drop must be from 0 up to the picture height"
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "0.01",
+   "0.01",
+   "0"
+  ],
+  "expected": "A picture 0.01 tall with its center 0.01 from the floor and the wire 0 below the top edge when pulled taut: put the nail 0.02 from the floor. The top edge sits at 0.02 and the bottom edge at 0.01."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "9999.99",
+   "9999.99",
+   "9999.99"
+  ],
+  "expected": "A picture 9999.99 tall with its center 9999.99 from the floor and the wire 9999.99 below the top edge when pulled taut: put the nail 5000 from the floor. The top edge sits at 14999.99 and the bottom edge at 5000."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "24.5",
+   "57.25",
+   "2.75"
+  ],
+  "expected": "A picture 24.5 tall with its center 57.25 from the floor and the wire 2.75 below the top edge when pulled taut: put the nail 66.75 from the floor. The top edge sits at 69.5 and the bottom edge at 45."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "0",
+   "57",
+   "3"
+  ],
+  "expected": "ERR:the picture height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "18",
+   "0",
+   "3"
+  ],
+  "expected": "ERR:the center height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "18",
+   "57",
+   "-1"
+  ],
+  "expected": "ERR:the wire drop must be a number from 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "18",
+   "57",
+   ""
+  ],
+  "expected": "ERR:the wire drop must be a number from 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "x",
+   "57",
+   "3"
+  ],
+  "expected": "ERR:the picture height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "18.123",
+   "57",
+   "3"
+  ],
+  "expected": "ERR:the picture height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "10000",
+   "57",
+   "3"
+  ],
+  "expected": "ERR:the picture height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   " 18 ",
+   " 57 ",
+   " 3 "
+  ],
+  "expected": "A picture 18 tall with its center 57 from the floor and the wire 3 below the top edge when pulled taut: put the nail 63 from the floor. The top edge sits at 66 and the bottom edge at 48."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "18.",
+   "57",
+   "3"
+  ],
+  "expected": "ERR:the picture height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "1",
+   "0.5",
+   "0.5"
+  ],
+  "expected": "A picture 1 tall with its center 0.5 from the floor and the wire 0.5 below the top edge when pulled taut: put the nail 0.5 from the floor. The top edge sits at 1 and the bottom edge at 0."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "7.77",
+   "33.33",
+   "1.11"
+  ],
+  "expected": "A picture 7.77 tall with its center 33.33 from the floor and the wire 1.11 below the top edge when pulled taut: put the nail 36.11 from the floor. The top edge sits at 37.22 and the bottom edge at 29.45."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "13.74",
+   "77.17",
+   "9.20"
+  ],
+  "expected": "A picture 13.74 tall with its center 77.17 from the floor and the wire 9.2 below the top edge when pulled taut: put the nail 74.84 from the floor. The top edge sits at 84.04 and the bottom edge at 70.3."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "40.62",
+   "81.03",
+   "12.06"
+  ],
+  "expected": "A picture 40.62 tall with its center 81.03 from the floor and the wire 12.06 below the top edge when pulled taut: put the nail 89.28 from the floor. The top edge sits at 101.34 and the bottom edge at 60.72."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "36.03",
+   "54.05",
+   "17.89"
+  ],
+  "expected": "A picture 36.03 tall with its center 54.05 from the floor and the wire 17.89 below the top edge when pulled taut: put the nail 54.18 from the floor. The top edge sits at 72.07 and the bottom edge at 36.04."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "25.70",
+   "108.51",
+   "20.99"
+  ],
+  "expected": "A picture 25.7 tall with its center 108.51 from the floor and the wire 20.99 below the top edge when pulled taut: put the nail 100.37 from the floor. The top edge sits at 121.36 and the bottom edge at 95.66."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "0.30",
+   "36.65",
+   "0.02"
+  ],
+  "expected": "A picture 0.3 tall with its center 36.65 from the floor and the wire 0.02 below the top edge when pulled taut: put the nail 36.78 from the floor. The top edge sits at 36.8 and the bottom edge at 36.5."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "35.65",
+   "66.85",
+   "1.31"
+  ],
+  "expected": "A picture 35.65 tall with its center 66.85 from the floor and the wire 1.31 below the top edge when pulled taut: put the nail 83.37 from the floor. The top edge sits at 84.68 and the bottom edge at 49.03."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "30.21",
+   "36.73",
+   "15.52"
+  ],
+  "expected": "A picture 30.21 tall with its center 36.73 from the floor and the wire 15.52 below the top edge when pulled taut: put the nail 36.32 from the floor. The top edge sits at 51.84 and the bottom edge at 21.63."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "3.67",
+   "199.46",
+   "1.05"
+  ],
+  "expected": "A picture 3.67 tall with its center 199.46 from the floor and the wire 1.05 below the top edge when pulled taut: put the nail 200.25 from the floor. The top edge sits at 201.3 and the bottom edge at 197.63."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "8.34",
+   "87.39",
+   "4.25"
+  ],
+  "expected": "A picture 8.34 tall with its center 87.39 from the floor and the wire 4.25 below the top edge when pulled taut: put the nail 87.31 from the floor. The top edge sits at 91.56 and the bottom edge at 83.22."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "25.10",
+   "198.61",
+   "14.63"
+  ],
+  "expected": "A picture 25.1 tall with its center 198.61 from the floor and the wire 14.63 below the top edge when pulled taut: put the nail 196.53 from the floor. The top edge sits at 211.16 and the bottom edge at 186.06."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "21.41",
+   "51.38",
+   "18.75"
+  ],
+  "expected": "A picture 21.41 tall with its center 51.38 from the floor and the wire 18.75 below the top edge when pulled taut: put the nail 43.34 from the floor. The top edge sits at 62.09 and the bottom edge at 40.68."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "34.33",
+   "186.51",
+   "14.88"
+  ],
+  "expected": "A picture 34.33 tall with its center 186.51 from the floor and the wire 14.88 below the top edge when pulled taut: put the nail 188.8 from the floor. The top edge sits at 203.68 and the bottom edge at 169.35."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "23.31",
+   "172.57",
+   "13.66"
+  ],
+  "expected": "A picture 23.31 tall with its center 172.57 from the floor and the wire 13.66 below the top edge when pulled taut: put the nail 170.57 from the floor. The top edge sits at 184.23 and the bottom edge at 160.92."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "49.06",
+   "173.36",
+   "2.27"
+  ],
+  "expected": "A picture 49.06 tall with its center 173.36 from the floor and the wire 2.27 below the top edge when pulled taut: put the nail 195.62 from the floor. The top edge sits at 197.89 and the bottom edge at 148.83."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "1.02",
+   "127.42",
+   "0.61"
+  ],
+  "expected": "A picture 1.02 tall with its center 127.42 from the floor and the wire 0.61 below the top edge when pulled taut: put the nail 127.32 from the floor. The top edge sits at 127.93 and the bottom edge at 126.91."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "38.47",
+   "52.26",
+   "17.81"
+  ],
+  "expected": "A picture 38.47 tall with its center 52.26 from the floor and the wire 17.81 below the top edge when pulled taut: put the nail 53.69 from the floor. The top edge sits at 71.5 and the bottom edge at 33.03."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "28.38",
+   "141.11",
+   "10.29"
+  ],
+  "expected": "A picture 28.38 tall with its center 141.11 from the floor and the wire 10.29 below the top edge when pulled taut: put the nail 145.01 from the floor. The top edge sits at 155.3 and the bottom edge at 126.92."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "7.69",
+   "8.02",
+   "3.76"
+  ],
+  "expected": "A picture 7.69 tall with its center 8.02 from the floor and the wire 3.76 below the top edge when pulled taut: put the nail 8.11 from the floor. The top edge sits at 11.87 and the bottom edge at 4.18."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "2.24",
+   "100.95",
+   "1.75"
+  ],
+  "expected": "A picture 2.24 tall with its center 100.95 from the floor and the wire 1.75 below the top edge when pulled taut: put the nail 100.32 from the floor. The top edge sits at 102.07 and the bottom edge at 99.83."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "0.20",
+   "45.09",
+   "0.17"
+  ],
+  "expected": "A picture 0.2 tall with its center 45.09 from the floor and the wire 0.17 below the top edge when pulled taut: put the nail 45.02 from the floor. The top edge sits at 45.19 and the bottom edge at 44.99."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "14.79",
+   "30.10",
+   "6.66"
+  ],
+  "expected": "A picture 14.79 tall with its center 30.1 from the floor and the wire 6.66 below the top edge when pulled taut: put the nail 30.84 from the floor. The top edge sits at 37.5 and the bottom edge at 22.71."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "38.14",
+   "128.60",
+   "9.59"
+  ],
+  "expected": "A picture 38.14 tall with its center 128.6 from the floor and the wire 9.59 below the top edge when pulled taut: put the nail 138.08 from the floor. The top edge sits at 147.67 and the bottom edge at 109.53."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "10.34",
+   "69.18",
+   "4.90"
+  ],
+  "expected": "A picture 10.34 tall with its center 69.18 from the floor and the wire 4.9 below the top edge when pulled taut: put the nail 69.45 from the floor. The top edge sits at 74.35 and the bottom edge at 64.01."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "2.81",
+   "3.40",
+   "1.40"
+  ],
+  "expected": "A picture 2.81 tall with its center 3.4 from the floor and the wire 1.4 below the top edge when pulled taut: put the nail 3.41 from the floor. The top edge sits at 4.81 and the bottom edge at 2."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "28.97",
+   "45.32",
+   "4.97"
+  ],
+  "expected": "A picture 28.97 tall with its center 45.32 from the floor and the wire 4.97 below the top edge when pulled taut: put the nail 54.84 from the floor. The top edge sits at 59.81 and the bottom edge at 30.84."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "30.63",
+   "111.09",
+   "10.50"
+  ],
+  "expected": "A picture 30.63 tall with its center 111.09 from the floor and the wire 10.5 below the top edge when pulled taut: put the nail 115.91 from the floor. The top edge sits at 126.41 and the bottom edge at 95.78."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "14.43",
+   "62.54",
+   "6.44"
+  ],
+  "expected": "A picture 14.43 tall with its center 62.54 from the floor and the wire 6.44 below the top edge when pulled taut: put the nail 63.32 from the floor. The top edge sits at 69.76 and the bottom edge at 55.33."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "28.61",
+   "189.13",
+   "28.60"
+  ],
+  "expected": "A picture 28.61 tall with its center 189.13 from the floor and the wire 28.6 below the top edge when pulled taut: put the nail 174.84 from the floor. The top edge sits at 203.44 and the bottom edge at 174.83."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "31.54",
+   "110.44",
+   "5.57"
+  ],
+  "expected": "A picture 31.54 tall with its center 110.44 from the floor and the wire 5.57 below the top edge when pulled taut: put the nail 120.64 from the floor. The top edge sits at 126.21 and the bottom edge at 94.67."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "2.21",
+   "42.04",
+   "1.49"
+  ],
+  "expected": "A picture 2.21 tall with its center 42.04 from the floor and the wire 1.49 below the top edge when pulled taut: put the nail 41.66 from the floor. The top edge sits at 43.15 and the bottom edge at 40.94."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "1.61",
+   "191.28",
+   "1.51"
+  ],
+  "expected": "A picture 1.61 tall with its center 191.28 from the floor and the wire 1.51 below the top edge when pulled taut: put the nail 190.58 from the floor. The top edge sits at 192.09 and the bottom edge at 190.48."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "34.67",
+   "142.81",
+   "16.05"
+  ],
+  "expected": "A picture 34.67 tall with its center 142.81 from the floor and the wire 16.05 below the top edge when pulled taut: put the nail 144.1 from the floor. The top edge sits at 160.15 and the bottom edge at 125.48."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "5.85",
+   "150.90",
+   "4.21"
+  ],
+  "expected": "A picture 5.85 tall with its center 150.9 from the floor and the wire 4.21 below the top edge when pulled taut: put the nail 149.62 from the floor. The top edge sits at 153.83 and the bottom edge at 147.98."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "10.61",
+   "102.01",
+   "2.77"
+  ],
+  "expected": "A picture 10.61 tall with its center 102.01 from the floor and the wire 2.77 below the top edge when pulled taut: put the nail 104.55 from the floor. The top edge sits at 107.32 and the bottom edge at 96.71."
+ },
+ {
+  "fn": "hangTruth",
+  "args": [
+   "7.34",
+   "136.89",
+   "5.50"
+  ],
+  "expected": "A picture 7.34 tall with its center 136.89 from the floor and the wire 5.5 below the top edge when pulled taut: put the nail 135.06 from the floor. The top edge sits at 140.56 and the bottom edge at 133.22."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "3",
+   "20"
+  ],
+  "expected": "3 pictures 20 wide on a wall 100 wide leave 10 at each end and between pictures. Left edges at 10, 40, 70."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "1",
+   "20"
+  ],
+  "expected": "1 picture 20 wide on a wall 100 wide leave 40 on each side. Left edge at 40."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "5",
+   "20"
+  ],
+  "expected": "5 pictures 20 wide on a wall 100 wide leave 0 at each end and between pictures. Left edges at 0, 20, 40, 60, 80."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "5",
+   "25"
+  ],
+  "expected": "5 pictures 25 wide need 125 of wall, which is 25 more than the 100 you have."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "5",
+   "20.01"
+  ],
+  "expected": "5 pictures 20.01 wide need 100.05 of wall, which is 0.05 more than the 100 you have."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "20",
+   "1"
+  ],
+  "expected": "20 pictures 1 wide on a wall 100 wide leave 3.81 at each end and between pictures. Left edges at 3.81, 8.62, 13.43, 18.24, 23.05, 27.86, 32.67, 37.48, 42.29, 47.1, 51.9, 56.71, 61.52, 66.33, 71.14, 75.95, 80.76, 85.57, 90.38, 95.19."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "20",
+   "5"
+  ],
+  "expected": "20 pictures 5 wide on a wall 100 wide leave 0 at each end and between pictures. Left edges at 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "21",
+   "5"
+  ],
+  "expected": "ERR:the number of pictures must be a whole number from 1 to 20"
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "3",
+   "0.33"
+  ],
+  "expected": "3 pictures 0.33 wide on a wall 100 wide leave 24.75 at each end and between pictures. Left edges at 24.75, 49.84, 74.92."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "10",
+   "3",
+   "3"
+  ],
+  "expected": "3 pictures 3 wide on a wall 10 wide leave 0.25 at each end and between pictures. Left edges at 0.25, 3.5, 6.75."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "10",
+   "3",
+   "3.33"
+  ],
+  "expected": "3 pictures 3.33 wide on a wall 10 wide leave 0 at each end and between pictures. Left edges at 0, 3.34, 6.67."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "9999.99",
+   "20",
+   "0.01"
+  ],
+  "expected": "20 pictures 0.01 wide on a wall 9999.99 wide leave 476.18 at each end and between pictures. Left edges at 476.18, 952.37, 1428.56, 1904.75, 2380.94, 2857.13, 3333.32, 3809.51, 4285.7, 4761.89, 5238.09, 5714.28, 6190.47, 6666.66, 7142.85, 7619.04, 8095.23, 8571.42, 9047.61, 9523.8."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "0",
+   "20"
+  ],
+  "expected": "ERR:the number of pictures must be a whole number from 1 to 20"
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "21",
+   "20"
+  ],
+  "expected": "ERR:the number of pictures must be a whole number from 1 to 20"
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "3",
+   "0"
+  ],
+  "expected": "ERR:the picture width must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "0",
+   "3",
+   "20"
+  ],
+  "expected": "ERR:the wall width must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "x",
+   "20"
+  ],
+  "expected": "ERR:the number of pictures must be a whole number from 1 to 20"
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "",
+   "20"
+  ],
+  "expected": "ERR:the number of pictures must be a whole number from 1 to 20"
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   " 100 ",
+   " 3 ",
+   " 20 "
+  ],
+  "expected": "3 pictures 20 wide on a wall 100 wide leave 10 at each end and between pictures. Left edges at 10, 40, 70."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "03",
+   "20"
+  ],
+  "expected": "3 pictures 20 wide on a wall 100 wide leave 10 at each end and between pictures. Left edges at 10, 40, 70."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "100",
+   "2.5",
+   "20"
+  ],
+  "expected": "ERR:the number of pictures must be a whole number from 1 to 20"
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "99.99",
+   "7",
+   "11.11"
+  ],
+  "expected": "7 pictures 11.11 wide on a wall 99.99 wide leave 2.78 at each end and between pictures. Left edges at 2.78, 16.67, 30.55, 44.44, 58.33, 72.22, 86.1."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "1",
+   "1",
+   "1"
+  ],
+  "expected": "1 picture 1 wide on a wall 1 wide leave 0 on each side. Left edge at 0."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "1",
+   "1",
+   "1.01"
+  ],
+  "expected": "1 picture 1.01 wide need 1.01 of wall, which is 0.01 more than the 1 you have."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "51.14",
+   "2",
+   "9.93"
+  ],
+  "expected": "2 pictures 9.93 wide on a wall 51.14 wide leave 10.43 at each end and between pictures. Left edges at 10.43, 30.78."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "110.26",
+   "18",
+   "3.34"
+  ],
+  "expected": "18 pictures 3.34 wide on a wall 110.26 wide leave 2.64 at each end and between pictures. Left edges at 2.64, 8.62, 14.6, 20.58, 26.55, 32.53, 38.51, 44.49, 50.47, 56.45, 62.43, 68.41, 74.39, 80.37, 86.34, 92.32, 98.3, 104.28."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "290.08",
+   "1",
+   "158.39"
+  ],
+  "expected": "1 picture 158.39 wide on a wall 290.08 wide leave 65.85 on each side. Left edge at 65.85."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "29.52",
+   "10",
+   "2.54"
+  ],
+  "expected": "10 pictures 2.54 wide on a wall 29.52 wide leave 0.37 at each end and between pictures. Left edges at 0.37, 3.29, 6.2, 9.12, 12.03, 14.95, 17.86, 20.78, 23.69, 26.61."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "41.80",
+   "19",
+   "3.60"
+  ],
+  "expected": "19 pictures 3.6 wide need 68.4 of wall, which is 26.6 more than the 41.8 you have."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "248.94",
+   "4",
+   "31.70"
+  ],
+  "expected": "4 pictures 31.7 wide on a wall 248.94 wide leave 24.43 at each end and between pictures. Left edges at 24.43, 80.56, 136.68, 192.81."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "251.46",
+   "11",
+   "2.40"
+  ],
+  "expected": "11 pictures 2.4 wide on a wall 251.46 wide leave 18.76 at each end and between pictures. Left edges at 18.76, 39.91, 61.07, 82.22, 103.38, 124.53, 145.69, 166.84, 188, 209.15, 230.31."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "152.13",
+   "12",
+   "6.06"
+  ],
+  "expected": "12 pictures 6.06 wide on a wall 152.13 wide leave 6.11 at each end and between pictures. Left edges at 6.11, 18.28, 30.45, 42.61, 54.78, 66.95, 79.12, 91.29, 103.46, 115.62, 127.79, 139.96."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "163.77",
+   "6",
+   "22.65"
+  ],
+  "expected": "6 pictures 22.65 wide on a wall 163.77 wide leave 3.98 at each end and between pictures. Left edges at 3.98, 30.61, 57.24, 83.88, 110.51, 137.14."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "209.26",
+   "11",
+   "11.68"
+  ],
+  "expected": "11 pictures 11.68 wide on a wall 209.26 wide leave 6.73 at each end and between pictures. Left edges at 6.73, 25.14, 43.56, 61.97, 80.38, 98.79, 117.2, 135.61, 154.03, 172.44, 190.85."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "244.89",
+   "4",
+   "27.77"
+  ],
+  "expected": "4 pictures 27.77 wide on a wall 244.89 wide leave 26.76 at each end and between pictures. Left edges at 26.76, 81.29, 135.83, 190.36."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "228.15",
+   "8",
+   "26.21"
+  ],
+  "expected": "8 pictures 26.21 wide on a wall 228.15 wide leave 2.05 at each end and between pictures. Left edges at 2.05, 30.31, 58.58, 86.84, 115.1, 143.36, 171.63, 199.89."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "138.58",
+   "17",
+   "1.25"
+  ],
+  "expected": "17 pictures 1.25 wide on a wall 138.58 wide leave 6.52 at each end and between pictures. Left edges at 6.52, 14.29, 22.06, 29.82, 37.59, 45.36, 53.13, 60.9, 68.67, 76.43, 84.2, 91.97, 99.74, 107.51, 115.28, 123.04, 130.81."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "191.83",
+   "4",
+   "35.97"
+  ],
+  "expected": "4 pictures 35.97 wide on a wall 191.83 wide leave 9.59 at each end and between pictures. Left edges at 9.59, 55.15, 100.71, 146.27."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "236.33",
+   "12",
+   "9.69"
+  ],
+  "expected": "12 pictures 9.69 wide on a wall 236.33 wide leave 9.23 at each end and between pictures. Left edges at 9.23, 28.16, 47.08, 66.01, 84.93, 103.86, 122.78, 141.71, 160.63, 179.56, 198.48, 217.41."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "98.15",
+   "8",
+   "5.23"
+  ],
+  "expected": "8 pictures 5.23 wide on a wall 98.15 wide leave 6.26 at each end and between pictures. Left edges at 6.26, 17.74, 29.23, 40.72, 52.2, 63.69, 75.18, 86.66."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "107.09",
+   "3",
+   "15.99"
+  ],
+  "expected": "3 pictures 15.99 wide on a wall 107.09 wide leave 14.78 at each end and between pictures. Left edges at 14.78, 45.55, 76.32."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "14.71",
+   "6",
+   "3.08"
+  ],
+  "expected": "6 pictures 3.08 wide need 18.48 of wall, which is 3.77 more than the 14.71 you have."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "150.18",
+   "2",
+   "51.17"
+  ],
+  "expected": "2 pictures 51.17 wide on a wall 150.18 wide leave 15.95 at each end and between pictures. Left edges at 15.95, 83.06."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "177.38",
+   "15",
+   "6.75"
+  ],
+  "expected": "15 pictures 6.75 wide on a wall 177.38 wide leave 4.76 at each end and between pictures. Left edges at 4.76, 16.27, 27.77, 39.28, 50.79, 62.3, 73.81, 85.32, 96.82, 108.33, 119.84, 131.35, 142.86, 154.36, 165.87."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "217.15",
+   "12",
+   "4.33"
+  ],
+  "expected": "12 pictures 4.33 wide on a wall 217.15 wide leave 12.71 at each end and between pictures. Left edges at 12.71, 29.74, 46.78, 63.82, 80.85, 97.89, 114.93, 131.97, 149, 166.04, 183.08, 200.11."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "217.25",
+   "16",
+   "9.88"
+  ],
+  "expected": "16 pictures 9.88 wide on a wall 217.25 wide leave 3.48 at each end and between pictures. Left edges at 3.48, 16.84, 30.2, 43.56, 56.92, 70.28, 83.64, 97, 110.37, 123.73, 137.09, 150.45, 163.81, 177.17, 190.53, 203.89."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "122.43",
+   "15",
+   "2.93"
+  ],
+  "expected": "15 pictures 2.93 wide on a wall 122.43 wide leave 4.91 at each end and between pictures. Left edges at 4.91, 12.74, 20.58, 28.41, 36.25, 44.08, 51.92, 59.75, 67.59, 75.42, 83.26, 91.09, 98.93, 106.76, 114.6."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "183.14",
+   "1",
+   "53.06"
+  ],
+  "expected": "1 picture 53.06 wide on a wall 183.14 wide leave 65.04 on each side. Left edge at 65.04."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "266.94",
+   "16",
+   "12.30"
+  ],
+  "expected": "16 pictures 12.3 wide on a wall 266.94 wide leave 4.13 at each end and between pictures. Left edges at 4.13, 20.55, 36.98, 53.4, 69.83, 86.26, 102.68, 119.11, 135.53, 151.96, 168.38, 184.81, 201.24, 217.66, 234.09, 250.51."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "189.78",
+   "20",
+   "4.99"
+  ],
+  "expected": "20 pictures 4.99 wide on a wall 189.78 wide leave 4.28 at each end and between pictures. Left edges at 4.28, 13.56, 22.83, 32.11, 41.38, 50.66, 59.93, 69.21, 78.48, 87.76, 97.03, 106.31, 115.58, 124.86, 134.13, 143.41, 152.68, 161.96, 171.23, 180.51."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "180.31",
+   "13",
+   "13.33"
+  ],
+  "expected": "13 pictures 13.33 wide on a wall 180.31 wide leave 0.5 at each end and between pictures. Left edges at 0.5, 14.33, 28.16, 42, 55.83, 69.66, 83.49, 97.32, 111.15, 124.98, 138.82, 152.65, 166.48."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "64.48",
+   "17",
+   "0.73"
+  ],
+  "expected": "17 pictures 0.73 wide on a wall 64.48 wide leave 2.89 at each end and between pictures. Left edges at 2.89, 6.52, 10.14, 13.76, 17.38, 21.01, 24.63, 28.25, 31.88, 35.5, 39.12, 42.74, 46.37, 49.99, 53.61, 57.23, 60.86."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "126.25",
+   "16",
+   "0.91"
+  ],
+  "expected": "16 pictures 0.91 wide on a wall 126.25 wide leave 6.57 at each end and between pictures. Left edges at 6.57, 14.05, 21.53, 29.01, 36.49, 43.97, 51.45, 58.93, 66.41, 73.89, 81.37, 88.85, 96.33, 103.81, 111.29, 118.77."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "66.54",
+   "4",
+   "17.60"
+  ],
+  "expected": "4 pictures 17.6 wide need 70.4 of wall, which is 3.86 more than the 66.54 you have."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "8.98",
+   "20",
+   "1.36"
+  ],
+  "expected": "20 pictures 1.36 wide need 27.2 of wall, which is 18.22 more than the 8.98 you have."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "75.95",
+   "20",
+   "3.58"
+  ],
+  "expected": "20 pictures 3.58 wide on a wall 75.95 wide leave 0.21 at each end and between pictures. Left edges at 0.21, 3.99, 7.78, 11.57, 15.36, 19.14, 22.93, 26.72, 30.5, 34.29, 38.08, 41.87, 45.65, 49.44, 53.23, 57.01, 60.8, 64.59, 68.38, 72.16."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "57.19",
+   "18",
+   "5.00"
+  ],
+  "expected": "18 pictures 5 wide need 90 of wall, which is 32.81 more than the 57.19 you have."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "297.29",
+   "9",
+   "7.29"
+  ],
+  "expected": "9 pictures 7.29 wide on a wall 297.29 wide leave 23.17 at each end and between pictures. Left edges at 23.17, 53.63, 84.08, 114.54, 145, 175.46, 205.92, 236.37, 266.83."
+ },
+ {
+  "fn": "rowTruth",
+  "args": [
+   "137.08",
+   "17",
+   "8.53"
+  ],
+  "expected": "17 pictures 8.53 wide need 145.01 of wall, which is 7.93 more than the 137.08 you have."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "20",
+   "11",
+   "14"
+  ],
+  "expected": "Opening 16 by 20 and picture 11 by 14: the borders are 2.5 on each side and 3 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "20",
+   "12",
+   "16"
+  ],
+  "expected": "Opening 16 by 20 and picture 12 by 16: the border is 2 all round."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "20",
+   "16",
+   "20"
+  ],
+  "expected": "Opening 16 by 20 and picture 16 by 20: the border is 0 all round."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "20",
+   "17",
+   "20"
+  ],
+  "expected": "Opening 16 by 20 and picture 17 by 20: the picture does not fit, 1 too wide."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "20",
+   "16",
+   "21"
+  ],
+  "expected": "Opening 16 by 20 and picture 16 by 21: the picture does not fit, 1 too tall."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "20",
+   "17",
+   "21"
+  ],
+  "expected": "Opening 16 by 20 and picture 17 by 21: the picture does not fit, 1 too wide and 1 too tall."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "20",
+   "15.99",
+   "19.99"
+  ],
+  "expected": "Opening 16 by 20 and picture 15.99 by 19.99: the border is 0.01 all round."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "20",
+   "15.5",
+   "20"
+  ],
+  "expected": "Opening 16 by 20 and picture 15.5 by 20: the borders are 0.25 on each side and 0 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "8",
+   "10",
+   "5",
+   "7"
+  ],
+  "expected": "Opening 8 by 10 and picture 5 by 7: the border is 1.5 all round."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "0.01",
+   "0.01",
+   "0.01",
+   "0.01"
+  ],
+  "expected": "Opening 0.01 by 0.01 and picture 0.01 by 0.01: the border is 0 all round."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "0",
+   "20",
+   "11",
+   "14"
+  ],
+  "expected": "ERR:the opening width must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "0",
+   "11",
+   "14"
+  ],
+  "expected": "ERR:the opening height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "20",
+   "0",
+   "14"
+  ],
+  "expected": "ERR:the picture width must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "20",
+   "11",
+   "0"
+  ],
+  "expected": "ERR:the picture height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "x",
+   "20",
+   "11",
+   "14"
+  ],
+  "expected": "ERR:the opening width must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "20",
+   "11",
+   ""
+  ],
+  "expected": "ERR:the picture height must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   " 16 ",
+   " 20 ",
+   " 11 ",
+   " 14 "
+  ],
+  "expected": "Opening 16 by 20 and picture 11 by 14: the borders are 2.5 on each side and 3 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16",
+   "20",
+   "11.001",
+   "14"
+  ],
+  "expected": "ERR:the picture width must be a number above 0 and up to 9999.99, with at most 2 decimals"
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16.5",
+   "20.25",
+   "11.75",
+   "14.5"
+  ],
+  "expected": "Opening 16.5 by 20.25 and picture 11.75 by 14.5: the borders are 2.38 on each side and 2.88 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "12.49",
+   "15.66",
+   "8.98",
+   "1.05"
+  ],
+  "expected": "Opening 12.49 by 15.66 and picture 8.98 by 1.05: the borders are 1.76 on each side and 7.31 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "13.57",
+   "25.66",
+   "7.72",
+   "9.23"
+  ],
+  "expected": "Opening 13.57 by 25.66 and picture 7.72 by 9.23: the borders are 2.93 on each side and 8.22 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "34.13",
+   "28.34",
+   "0.61",
+   "26.72"
+  ],
+  "expected": "Opening 34.13 by 28.34 and picture 0.61 by 26.72: the borders are 16.76 on each side and 0.81 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "28.99",
+   "47.51",
+   "29.13",
+   "32.17"
+  ],
+  "expected": "Opening 28.99 by 47.51 and picture 29.13 by 32.17: the picture does not fit, 0.14 too wide."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "49.13",
+   "20.82",
+   "39.25",
+   "5.12"
+  ],
+  "expected": "Opening 49.13 by 20.82 and picture 39.25 by 5.12: the borders are 4.94 on each side and 7.85 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "13.68",
+   "9.49",
+   "1.39",
+   "8.84"
+  ],
+  "expected": "Opening 13.68 by 9.49 and picture 1.39 by 8.84: the borders are 6.15 on each side and 0.33 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "13.83",
+   "21.12",
+   "0.78",
+   "0.72"
+  ],
+  "expected": "Opening 13.83 by 21.12 and picture 0.78 by 0.72: the borders are 6.53 on each side and 10.2 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "23.23",
+   "13.58",
+   "5.08",
+   "0.70"
+  ],
+  "expected": "Opening 23.23 by 13.58 and picture 5.08 by 0.7: the borders are 9.08 on each side and 6.44 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "38.26",
+   "47.68",
+   "21.21",
+   "11.76"
+  ],
+  "expected": "Opening 38.26 by 47.68 and picture 21.21 by 11.76: the borders are 8.53 on each side and 17.96 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "22.14",
+   "25.60",
+   "2.99",
+   "5.01"
+  ],
+  "expected": "Opening 22.14 by 25.6 and picture 2.99 by 5.01: the borders are 9.58 on each side and 10.3 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "40.28",
+   "20.64",
+   "4.62",
+   "16.91"
+  ],
+  "expected": "Opening 40.28 by 20.64 and picture 4.62 by 16.91: the borders are 17.83 on each side and 1.87 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "37.92",
+   "11.08",
+   "2.08",
+   "12.00"
+  ],
+  "expected": "Opening 37.92 by 11.08 and picture 2.08 by 12: the picture does not fit, 0.92 too tall."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "48.50",
+   "6.85",
+   "48.70",
+   "2.00"
+  ],
+  "expected": "Opening 48.5 by 6.85 and picture 48.7 by 2: the picture does not fit, 0.2 too wide."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "33.52",
+   "42.28",
+   "32.71",
+   "23.47"
+  ],
+  "expected": "Opening 33.52 by 42.28 and picture 32.71 by 23.47: the borders are 0.41 on each side and 9.41 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "39.19",
+   "21.58",
+   "24.27",
+   "20.71"
+  ],
+  "expected": "Opening 39.19 by 21.58 and picture 24.27 by 20.71: the borders are 7.46 on each side and 0.44 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "9.37",
+   "22.30",
+   "2.61",
+   "12.32"
+  ],
+  "expected": "Opening 9.37 by 22.3 and picture 2.61 by 12.32: the borders are 3.38 on each side and 4.99 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "18.63",
+   "1.79",
+   "18.00",
+   "0.65"
+  ],
+  "expected": "Opening 18.63 by 1.79 and picture 18 by 0.65: the borders are 0.32 on each side and 0.57 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "24.42",
+   "33.03",
+   "11.97",
+   "5.76"
+  ],
+  "expected": "Opening 24.42 by 33.03 and picture 11.97 by 5.76: the borders are 6.23 on each side and 13.64 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "18.59",
+   "21.24",
+   "1.03",
+   "12.46"
+  ],
+  "expected": "Opening 18.59 by 21.24 and picture 1.03 by 12.46: the borders are 8.78 on each side and 4.39 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "15.44",
+   "7.40",
+   "3.45",
+   "7.57"
+  ],
+  "expected": "Opening 15.44 by 7.4 and picture 3.45 by 7.57: the picture does not fit, 0.17 too tall."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "35.34",
+   "14.36",
+   "16.30",
+   "13.33"
+  ],
+  "expected": "Opening 35.34 by 14.36 and picture 16.3 by 13.33: the borders are 9.52 on each side and 0.52 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "11.61",
+   "27.41",
+   "5.50",
+   "24.52"
+  ],
+  "expected": "Opening 11.61 by 27.41 and picture 5.5 by 24.52: the borders are 3.06 on each side and 1.45 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "1.51",
+   "9.46",
+   "1.09",
+   "2.12"
+  ],
+  "expected": "Opening 1.51 by 9.46 and picture 1.09 by 2.12: the borders are 0.21 on each side and 3.67 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "16.15",
+   "46.32",
+   "12.49",
+   "16.54"
+  ],
+  "expected": "Opening 16.15 by 46.32 and picture 12.49 by 16.54: the borders are 1.83 on each side and 14.89 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "3.16",
+   "19.65",
+   "2.59",
+   "1.24"
+  ],
+  "expected": "Opening 3.16 by 19.65 and picture 2.59 by 1.24: the borders are 0.29 on each side and 9.21 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "33.48",
+   "10.44",
+   "21.05",
+   "8.56"
+  ],
+  "expected": "Opening 33.48 by 10.44 and picture 21.05 by 8.56: the borders are 6.22 on each side and 0.94 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "49.40",
+   "31.53",
+   "14.14",
+   "5.70"
+  ],
+  "expected": "Opening 49.4 by 31.53 and picture 14.14 by 5.7: the borders are 17.63 on each side and 12.92 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "33.09",
+   "36.26",
+   "31.21",
+   "35.28"
+  ],
+  "expected": "Opening 33.09 by 36.26 and picture 31.21 by 35.28: the borders are 0.94 on each side and 0.49 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "32.81",
+   "9.07",
+   "19.73",
+   "5.40"
+  ],
+  "expected": "Opening 32.81 by 9.07 and picture 19.73 by 5.4: the borders are 6.54 on each side and 1.84 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "13.04",
+   "15.51",
+   "11.09",
+   "7.50"
+  ],
+  "expected": "Opening 13.04 by 15.51 and picture 11.09 by 7.5: the borders are 0.98 on each side and 4.01 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "13.55",
+   "4.97",
+   "7.46",
+   "4.63"
+  ],
+  "expected": "Opening 13.55 by 4.97 and picture 7.46 by 4.63: the borders are 3.05 on each side and 0.17 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "26.11",
+   "39.58",
+   "20.01",
+   "35.69"
+  ],
+  "expected": "Opening 26.11 by 39.58 and picture 20.01 by 35.69: the borders are 3.05 on each side and 1.95 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "7.12",
+   "27.38",
+   "5.54",
+   "16.35"
+  ],
+  "expected": "Opening 7.12 by 27.38 and picture 5.54 by 16.35: the borders are 0.79 on each side and 5.52 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "36.47",
+   "47.48",
+   "12.48",
+   "9.61"
+  ],
+  "expected": "Opening 36.47 by 47.48 and picture 12.48 by 9.61: the borders are 12 on each side and 18.94 at the top and bottom."
+ },
+ {
+  "fn": "matTruth",
+  "args": [
+   "47.72",
+   "32.76",
+   "32.39",
+   "32.06"
+  ],
+  "expected": "Opening 47.72 by 32.76 and picture 32.39 by 32.06: the borders are 7.67 on each side and 0.35 at the top and bottom."
+ }
+   ]
